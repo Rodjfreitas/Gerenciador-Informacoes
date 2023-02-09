@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="css/estilo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
@@ -26,32 +26,44 @@
       </nav>
     </header>
       <form>
-        <p>
-          <input id="name" type="text" placeholder="Nome Completo:">
-        </p>
-        <p>Data de nascimento:
-          <input id="age" type="date">
-        </p>
-        <p>Naturalidade:
-          <select name="naturalidade" id="naturalidade" onchange="selectOption()">
-            <option value="Brasileira">Brasileira</option>
-            <option value="Estrangeira">Estrangeira</option>            
-          </select>
-          <input id="natOutra" type="text" placeholder="digite sua nacionalidade">
-        </p>
-        <p>
-          <input id="city" type="text" placeholder="Cidade:">
-        </p>
-        <p>
-          <input id="rg" type="number" placeholder="RG:">
-        </p>
-        <p>
-          <input id="cpf" type="number" placeholder="CPF:">
-        </p>
-        <p>
-          <input id="tel" type="number" placeholder="Telefone:">
-        </p>
-        <input id="btn" type="button" value="Inserir" onclick="Enviar()">
+        <div id="text">
+          <p>
+            <input id="name" type="text" placeholder="Nome Completo:">
+          </p>
+          <p>
+            <input id="city" type="text" placeholder="Cidade:">
+          </p>
+          <p>
+            <input id="state" type="text" placeholder="Estado:">
+          </p>
+          <p>
+            <input id="rg" type="number" placeholder="RG:">
+          </p>
+          <p>
+            <input id="cpf" type="number" placeholder="CPF:">
+          </p>
+          <p>
+            <input id="tel" type="number" placeholder="Telefone:">
+          </p>
+        </div>
+        <div id="form">
+          <p>Data de nascimento:
+            <input id="age" type="date">
+          </p>
+          <p>Naturalidade:
+            <select name="naturalidade" id="naturalidade" onchange="selectOption()">
+              <option value="Brasileira">Brasileira</option>
+              <option value="Estrangeira">Estrangeira</option>            
+            </select>
+            <input id="natOutra" type="text" placeholder="digite sua nacionalidade">
+          </p>
+          <input id="btn" type="button" value="Inserir" onclick="Enviar()">
+
+        </div>
+   
+
+
+        
       </form>
       <div>
         <table id="lancamentos">
@@ -60,6 +72,7 @@
             <td>Nascimento</td>
             <td>Naturalidade</td>
             <td>Cidade</td>
+            <td>Estado</td>
             <td>RG</td>
             <td>CPF</td>
             <td>Telefone</td>
@@ -69,7 +82,7 @@
     
   </section>
 
-<script src="ambiente.js"></script>  
+<script src="javascript/ambiente.js"></script>  
 </body>
 </html>
 
