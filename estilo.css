@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+  --global-background: rgb(84, 66, 253);
+  --global-white: rgb(241, 231, 231);
+}
+
+body{
+  background-color: var(--global-background);
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+  background-color: var(--global-white);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+#navMain{
+  margin-bottom: 0px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+header ul{
+  display: flex;
+  
+}
+
+header li{
+  margin: 0px 20px;
+  list-style: none;
+}
+
+form{
+  background-color: var(--global-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  margin: 0px 20px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+form p{
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+form input{
+  border: 1px solid gray;
+  padding: 5px;
+  margin: 0px 5px;
+}
+
+form select{
+  margin: 0 5px;
+}
+
+#natOutra{
+  visibility: hidden;
+}
+
+form #btn{
+  background-color: blue;
+  width: 200px;
+  border-radius: 12px;
+  color: var(--global-white);
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-left: 20px; 
+}
+
+form #btn:hover{
+  cursor: pointer;
+}
+
+div{
+  background-color: var(--global-white);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.cabeçalho td{
+  font-size: 20px;
+  margin-bottom: 20px;
+  
+}
+
+#list{
+  font-size: 13px;
+  margin: 20px 0px;
+  color: blue;
+}
+
+#bin:hover{
+  cursor: pointer;
+}
+
+

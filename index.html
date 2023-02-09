@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Informações</title>
+</head>
+<body>
+  <header>
+    <h1>Gerenciador de Informações</h1>
+  </header>
+  <section>
+    <header id="navMain">
+      <nav>
+        <ul>
+          <li>Cadastros</li>
+          <li>pesquisas</li>
+          <li>ajuda</li>
+        </ul>
+      </nav>
+    </header>
+      <form>
+        <p>
+          <input id="name" type="text" placeholder="Nome Completo:">
+        </p>
+        <p>Data de nascimento:
+          <input id="age" type="date">
+        </p>
+        <p>Naturalidade:
+          <select name="naturalidade" id="naturalidade" onchange="selectOption()">
+            <option value="Brasileira">Brasileira</option>
+            <option value="Estrangeira">Estrangeira</option>            
+          </select>
+          <input id="natOutra" type="text" placeholder="digite sua nacionalidade">
+        </p>
+        <p>
+          <input id="city" type="text" placeholder="Cidade:">
+        </p>
+        <p>
+          <input id="rg" type="number" placeholder="RG:">
+        </p>
+        <p>
+          <input id="cpf" type="number" placeholder="CPF:">
+        </p>
+        <p>
+          <input id="tel" type="number" placeholder="Telefone:">
+        </p>
+        <input id="btn" type="button" value="Inserir" onclick="Enviar()">
+      </form>
+      <div>
+        <table id="lancamentos">
+          <tr class="cabeçalho">
+            <td>Nome</td>
+            <td>Nascimento</td>
+            <td>Naturalidade</td>
+            <td>Cidade</td>
+            <td>RG</td>
+            <td>CPF</td>
+            <td>Telefone</td>
+          </tr>
+        </table>
+      </div>
+    
+  </section>
+
+<script src="ambiente.js"></script>  
+</body>
+</html>
+
